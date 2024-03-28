@@ -1,5 +1,24 @@
 # Tome
 
+# Library App
+
+This project aims to develop a user-friendly library app using Angular to address the challenges students face in accessing and managing the availability of books in the school library. 
+The app provides real-time information on book availability, helps users locate books within the library, and facilitates effective planning of library visits.
+
+## Features
+- Quickly check the availability of specific books.
+- Search for books by title, author, or subject.
+- View real-time availability status and additional information such as shelf locations.
+- Plan library visits based on book availability.
+
+## Prerequisites
+Before running the project, ensure you have the following installed:
+- Node.js
+- npm (Node Package Manager)
+
+## Installation
+1. Clone the repository to your local machine:
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
