@@ -1,0 +1,28 @@
+<div class="hero">
+  <div class="tabs">
+    <button *ngFor="let tab of tabs"
+            (click)="selectedTab = tab"
+            [class.mat-tab-label]="true"
+            [class.mat-tab-label-active]="selectedTab === tab">
+      {{tab}}
+    </button>
+  </div>
+
+  <div *ngIf="selectedTab === 'Catalog'" class="content active">
+    <h1 class="hero-heading">Search the Catalog</h1>
+    <!-- Doctor search form -->
+    <form>
+      <input type="text" class="search-bar" placeholder="Enter " /> <!-- Add class here -->
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div *ngIf="selectedTab === 'Site'" class="content">
+    <h1 class="hero-heading">Search this site</h1>
+    <!-- Lab search form -->
+    <form>
+      <input type="text" class="search-bar" placeholder="Enter" /> <!-- Add class here -->
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>

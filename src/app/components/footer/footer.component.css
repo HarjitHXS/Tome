@@ -1,0 +1,53 @@
+.footer {
+    background: linear-gradient(110deg, #8c7ac5 60%, #4baeff 60%);
+    color: #212529;
+    text-align: center;
+
+     height: 150px;
+     bottom: 0;
+     left: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container {
+
+    flex-direction: column;
+
+
+}
+.menu-links {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.policy-links {
+    font-size: 14px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 18px; /* Increase the right margin */
+}
+
+.footer a {
+    color: #171d21;
+    text-decoration: none; /* Add this line */
+}
+
+.footer a:hover {
+    color: #057ff1;
+    text-decoration: none;
+}
+.footer p {
+    color: #f8d5d5;
+}

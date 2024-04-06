@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    position: relative;
+    width: 60%;
+    margin: auto;
+    top: 60px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.logo {
+    font-weight: 1000;
+    font-size: 2.5rem;
+
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-link {
+    margin-left: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.sign-in {
+
+    background-color: #FFC75F;
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem; /* adjust as needed */
+    width: auto; /* adjust as needed */
+    margin-left: 1rem;
+    white-space: nowrap; /* prevents the text from wrapping to the next line */
+}
+
+.sign-up {
+
+    background-color: rgba(17, 115, 243, 0.55);
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem; /* adjust as needed */
+    width: auto; /* adjust as needed */
+    margin-left: 1rem;
+    white-space: nowrap; /* prevents the text from wrapping to the next line */
+}
+
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    width: 200px; /* Adjust as needed */
+}
+
+.search-button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #739ecc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #5a7ca6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+
+        flex-direction: row;
+        align-items: center;
+
+
+
+
+        width: 90%;
+    }
+
+
+}

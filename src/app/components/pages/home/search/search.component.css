@@ -1,0 +1,80 @@
+/* CSS for small rectangular tabs */
+.mat-tab-label {
+    margin-top: 10px;
+    padding: 10px 50px; /* Adjust as needed */
+    font-size: 14px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Adjust as needed */
+    border-radius: 4px; /* Adjust as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 20px; /* Add this line */
+}
+
+.hero {
+    background: linear-gradient(217deg, rgba(82, 218, 231, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(112, 118, 232, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px; /* Add this line */
+}
+.mat-tab-label-active {
+    background-color: #7178f6; /* Change to the color you want */
+}
+.search-bar {
+    width: 300px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+    border-radius: 10px; /* Add this line */
+}
+
+
+
+.tabs {
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+button.mat-tab-label-active {
+    background-color: #3c2e73; /* Dark color when tab is active */
+}
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3c2e73; /* Darker green */
+}

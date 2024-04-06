@@ -1,0 +1,10 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100vh - 200px); Remove this line */
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
