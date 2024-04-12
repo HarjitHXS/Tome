@@ -26,6 +26,38 @@ body, h1, p {
     border-radius: 20px;
 }
 
+.book-image {
+
+    background-image: url("https://books.google.com/books/content?id=4kZbs2NeLJoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2naoW4GgSZN3q1eBge3XkeWxt1jg&w=1280");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+}
+.book-image2 {
+
+    background-image: url("https://books.google.com/books/content?id=yzkEXXxF0doC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3hirJiWu-9vCxliW1kmwGmd5ppdA&w=1280");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+}
+/* Style for the Add to Cart button */
+.books button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
 /* Hero Section Styles */
 .hero {
     background-color: #ffffff;
@@ -54,10 +86,13 @@ body, h1, p {
 .container {
     margin-top: 20px; /* Adjust as needed */
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /*background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0");*/
 }
 .hero-text h1 {
-    font-family: "Satisfy", cursive;
+    padding: 20px;
     font-size: 2.5rem;
     font-weight: bold;
     color: #0b0909;
@@ -159,9 +194,12 @@ body, h1, p {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-.book {
+.books {
     width: 30%; /* Adjust as needed */
     margin: 10px;
     padding: 20px;

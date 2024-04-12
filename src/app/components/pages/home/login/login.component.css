@@ -1,111 +1,61 @@
-body {
-    background:#2c2c2c;
-    font-family:"Raleway";
-}
+
+
 
 .container {
-    margin-top: 40px;
-    backdrop-filter: blur(100px);
-    background: linear-gradient(217deg, rgba(113, 175, 113, 0.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(179, 61, 178, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(119, 74, 74, 0.8), rgba(0,0,255,0) 70.71%);
-    height: 500px;
-
+    background: linear-gradient(217deg, rgba(109, 164, 168, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(69, 75, 181, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(152, 152, 188, 0.8), rgba(0,0,255,0) 70.71%);
+    max-width: fit-content;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+    margin-top: 120px;
+    margin-bottom: 60px;
 }
 .form {
-    border-radius: 40px;
-    background: linear-gradient(217deg, rgba(113, 175, 113, 0.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(135, 53, 86, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(244, 244, 244, 0.8), rgba(0,0,255,0) 70.71%);
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:300px;
-    height:250px;
-    padding:10px;
-}
-.form .form-header {
-    height:30px;
-    display:flex;
-    align-items:center;
-    text-align:center;
-}
-.form .form-header > div {
-    width:calc(100% / 3);
-
-    color:#ddd;
-    font-size:18px;
-    font-weight:600;
-    cursor:pointer;
+    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
 }
 
-.form.signin .form-header div.show-signin {
-    color:#f1575b;
-}
-.form.signup .form-header div.show-signup {
-    color:#f1575b;
-}
-.form.reset .form-header div.show-reset {
-    color:#f1575b;
-}
-.form .form-elements {
-    margin-top:15px;
-}
-.form .form-elements .form-element {
-    height:50px;
-    opacity:1;
-    overflow:hidden;
-    transition:all 500ms ease-in-out;
-}
-.form .form-elements input {
-    width:100%;
-    padding:10px;
-    font-size:16px;
-    margin:5px 0px;
-    border-radius:10px;
-    box-sizing:border-box;
-    border:1px solid #222;
-    background:#f5f5f5;
-}
-.form .form-elements button {
-    width:100%;
-    padding:10px;
-    font-size:16px;
-    font-weight:600;
-    margin-top:5px;
-    border-radius:10px;
-    background:#f1575b;
-    color:#f5f5f5;
-    cursor:pointer;
-    border:none;
-    outline:none;
-}
-.form .arrow {
-    position:absolute;
-    top:51px;
-    width:0;
-    height:0;
-    border-left:10px solid transparent;
-    border-right:10px solid transparent;
-    border-bottom:10px solid #f5f5f5;
-}
-.form.signup .arrow {
-    left:calc(calc(100% / 3) / 2);
-}
-.form.signin .arrow {
-    left:calc(calc(100% / 3) + calc(calc(100% / 3) / 2.2)) ;
-}
-.form.reset .arrow {
-    left:calc(calc(calc(100% / 3) * 2) + calc(calc(100% / 3) / 3)) ;
+/* Styles for the form elements */
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-.form.signin .form-elements > div:nth-child(3) {
-    height:0px;
-    opacity:0;
+/* Styles for the input fields */
+.form-element input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
-.form.reset .form-elements > div:nth-child(2),
-.form.reset .form-elements > div:nth-child(3) {
-    height:0px;
-    opacity:0;
+
+/* Styles for the labels */
+.form-element label {
+  margin-bottom: 5px;
+}
+
+/* Styles for the buttons */
+.form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change the color of the button when hovered */
+.form button:hover {
+  background-color: #45a049;
 }

@@ -1,3 +1,4 @@
+
 <nav class="navbar">
     <a routerLink="/home"><div class="logo">Tome</div></a>
     <div class="search">
@@ -5,7 +6,51 @@
         <button class="search-button">
             <i class="fas fa-search"></i> Search
         </button>
-        <a *ngIf="!userName" href="/login" class="nav-link sign-in">LOG IN</a>
-        <div *ngIf="userName" class="nav-link sign-in">{{ userName }}</div>
+        <div *ngIf="!isLoggedIn">
+            <a href="/login" class="nav-link sign-in">LOG IN</a>
+        </div>
+        <div *ngIf="isLoggedIn" class="container">
+         <mat-icon>shopping_cart</mat-icon>
+            <a href="/login" class="nav-link sign-in">LOG OUT</a>
+        </div>
     </div>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<nav class="navbar">-->
+<!--    <a routerLink="/home"><div class="logo">Tome</div></a>-->
+<!--    <div class="search">-->
+<!--        <input type="text" placeholder="Search">-->
+<!--        <button class="search-button">-->
+<!--            <i class="fas fa-search"></i> Search-->
+<!--        </button>-->
+<!--        <a  href="/login" class="nav-link sign-in">LOG IN</a>-->
+
+<!--    </div>-->
+<!--</nav>-->

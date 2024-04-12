@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
+.search {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+.container {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
 
+.container p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 20px;
+}
 
 .navbar {
     display: flex;
@@ -9,7 +29,7 @@
     justify-content: space-between;
     padding: 2rem 4rem;
     position: relative;
-    width: 60%;
+    width: 70%;
     margin: auto;
     top: 60px;
 }
@@ -78,9 +98,10 @@
     border-radius: 4px;
     background-color: #739ecc;
     color: white;
-    font-size: 1rem;
+    font-size: 0.5rem;
     cursor: pointer;
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 .search-button:hover {

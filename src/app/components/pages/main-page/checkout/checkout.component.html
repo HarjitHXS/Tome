@@ -1,0 +1,55 @@
+
+
+
+
+    <div class="row">
+
+<mat-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Reading Option</ng-template>
+        <div class="list1">
+        <div class="books">
+            <div class="book-image2"></div>
+            <h2>The Night of        the Ninjas</h2>
+            <p>Author: Mary Pope Osborne </p>
+            <p>Year: 2010</p>
+
+        </div>
+      <mat-radio-group aria-label="Select an option" formControlName="readingOption">
+        <mat-radio-button value="here">For here</mat-radio-button>
+        <mat-radio-button value="toGo">To go</mat-radio-button>
+      </mat-radio-group>
+
+     <div class="button1">
+  <button mat-button matStepperNext>
+    Next
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+</div>
+        </div>
+    </form>
+  </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+        <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Select Dates</ng-template>
+
+            <mat-form-field>
+                <input matInput type="text" formControlName="startDate" placeholder="Start Date (YYYY-MM-DD)">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput type="text" formControlName="endDate" placeholder="End Date (YYYY-MM-DD)">
+            </mat-form-field>
+
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="checkAvailability()">Check Availability</button>
+                <button mat-button matStepperNext [disabled]="!availabilityChecked">Next</button>
+            </div>
+        </form>
+    </mat-step>
+
+</mat-stepper>
+        </div>
+
