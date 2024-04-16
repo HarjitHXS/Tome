@@ -9,18 +9,7 @@
     <mat-divider class="div"></mat-divider>
     <mat-nav-list class="list">
 
-      <button mat-button (click)="showDashboard = true; showReceipts = false; showCheckout = false">
-        <mat-icon>dashboard</mat-icon>
-        Dashboard
-      </button>
-      <button mat-button (click)="showReceipts = true; showDashboard = false; showCheckout= false">
-        <mat-icon>receipt</mat-icon>
-        Receipts
-      </button>
-        <button mat-button (click)="showCheckout = true; showDashboard = false; showReceipts = false">
-           <mat-icon>shopping_cart</mat-icon>
-            checkout
-        </button>
+
       <button mat-button routerLink="/settings">
         <mat-icon>settings</mat-icon>
         Settings
@@ -35,15 +24,7 @@
 
   <mat-sidenav-content>
 
-    <div class="dashboard" *ngIf="showDashboard">
-      <app-dashboard></app-dashboard>
-    </div>
-    <div class="receipts" *ngIf="showReceipts">
-      <app-receipts></app-receipts>
-    </div>
-    <div class="checkout" *ngIf="showCheckout">
-      <app-checkout></app-checkout>
-    </div>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
 </div>
