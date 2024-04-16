@@ -1,0 +1,61 @@
+
+
+
+.container {
+    background: linear-gradient(217deg, rgba(109, 164, 168, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(69, 75, 181, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(152, 152, 188, 0.8), rgba(0,0,255,0) 70.71%);
+    max-width: fit-content;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.form {
+    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+/* Styles for the form elements */
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Styles for the input fields */
+.form-element input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the labels */
+.form-element label {
+  margin-bottom: 5px;
+}
+
+/* Styles for the buttons */
+.form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change the color of the button when hovered */
+.form button:hover {
+  background-color: #45a049;
+}

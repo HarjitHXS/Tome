@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+.first-section {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    backdrop-filter: blur(100px);
+    background-image: url("https://images.unsplash.com/photo-1529148482759-b35b25c5f217?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.book-image {
+
+    background-image: url("https://books.google.com/books/content?id=4kZbs2NeLJoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2naoW4GgSZN3q1eBge3XkeWxt1jg&w=1280");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+}
+.book-image2 {
+
+    background-image: url("https://books.google.com/books/content?id=yzkEXXxF0doC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U3hirJiWu-9vCxliW1kmwGmd5ppdA&w=1280");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+}
+/* Style for the Add to Cart button */
+.books button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; /* Pointer/hand icon */
+    border-radius: 4px; /* Rounded corners */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    background-color: #ffffff;
+    height: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text {
+    background: linear-gradient(217deg, rgba(238, 239, 238, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(250, 250, 250, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(244, 244, 244, 0.8), rgba(0,0,255,0) 70.71%);
+
+    font-size: 1rem;
+
+    margin-bottom: 10px; /* Add some space between the text and the container */
+   border-radius: 20px;
+    padding: 30px;
+}
+
+.container {
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0");*/
+}
+.hero-text h1 {
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0b0909;
+}
+
+.hero-text p {
+
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #000000;
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #fde6e6;
+    border-radius: 50px;
+
+}
+
+.feature {
+    margin: 20px;
+    width: 20%;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(217deg, rgba(173, 246, 179, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(72, 74, 119, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(189, 189, 246, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #739ecc;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #5a7ca6;
+}
+
+.explore-more {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.explore-more h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.explore-more p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.explore-more .learn-more {
+    /* Styles for the "Explore Now" button. You can reuse the .learn-more styles or create new ones. */
+}
+
+
+.app-search {
+    width: 200px; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    position: absolute;
+    left: 0;
+}
+.recent-books {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.recent-books h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.books {
+    width: 30%; /* Adjust as needed */
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 1rem;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .app-search {
+        width: 100%;
+        position: static;
+    }
+}
