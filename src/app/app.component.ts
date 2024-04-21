@@ -14,9 +14,7 @@ import {CommonModule} from "@angular/common";
 import {LoginComponent} from "./components/pages/home/login/login.component";
 import { MatTabsModule } from '@angular/material/tabs';
 
-import {DashboardComponent} from "./components/pages/main-page/dashboard/dashboard.component";
-import {MainPageComponent} from "./components/pages/main-page/main-page.component";
-import {CheckoutComponent} from "./components/pages/main-page/checkout/checkout.component";
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -32,11 +30,9 @@ import {CheckoutComponent} from "./components/pages/main-page/checkout/checkout.
       TeamComponent,
       ContactComponent,
       SearchComponent,
-      MainPageComponent,
-      CheckoutComponent,
       PrivacyStatementComponent,
       LoginComponent,
-      DashboardComponent,
+
     RouterOutlet,
     FooterComponent,
     MatTabsModule
