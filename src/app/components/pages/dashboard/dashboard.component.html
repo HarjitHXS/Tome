@@ -1,0 +1,156 @@
+
+<div class="container">
+   <app-sidebar></app-sidebar>
+       
+    <div class="dashboard">
+        
+        <input type="text" id="searchInput" placeholder="Search.." (keydown)="handleEnterKey($event)">
+        <div *ngIf="!showTableView" id="viewContainer">
+            <div id="tileView">
+                <h2>Recently Viewed</h2>
+                <div class="book-tile">
+                    <img src="./assets/images/Book1.jpg" alt="Book 1">
+                    <p>Book 1</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book2.jpg" alt="Book 2">
+                    <p>Book 2</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book3.jpg" alt="Book 3">
+                    <p>Book 3</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book4.jpg" alt="Book 4">
+                    <p>Book 4</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book5.jpg" alt="Book 5">
+                    <p>Book 5</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book6.jpg" alt="Book 6">
+                    <p>Book 6</p>
+                </div>
+                <h2>All Books</h2>
+                <div class="book-tile">
+                    <img src="./assets/images/Book1.jpg" alt="Book 1">
+                    <p>Book 1</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book2.jpg" alt="Book 2">
+                    <p>Book 2</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book3.jpg" alt="Book 3">
+                    <p>Book 3</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book4.jpg" alt="Book 4">
+                    <p>Book 4</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book5.jpg" alt="Book 5">
+                    <p>Book 5</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book6.jpg" alt="Book 6">
+                    <p>Book 6</p>
+                </div>
+                <h2>Books taken out</h2>
+                <div class="book-tile">
+                    <img src="./assets/images/Book1.jpg" alt="Book 1">
+                    <p>Book 1</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book2.jpg" alt="Book 2">
+                    <p>Book 2</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book3.jpg" alt="Book 3">
+                    <p>Book 3</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book4.jpg" alt="Book 4">
+                    <p>Book 4</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book5.jpg" alt="Book 5">
+                    <p>Book 5</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book6.jpg" alt="Book 6">
+                    <p>Book 6</p>
+                </div>
+                <h2>Books returned</h2>
+                <div class="book-tile">
+                    <img src="./assets/images/Book1.jpg" alt="Book 1">
+                    <p>Book 1</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book2.jpg" alt="Book 2">
+                    <p>Book 2</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book3.jpg" alt="Book 3">
+                    <p>Book 3</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book4.jpg" alt="Book 4">
+                    <p>Book 4</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book5.jpg" alt="Book 5">
+                    <p>Book 5</p>
+                </div>
+                <div class="book-tile">
+                    <img src="./assets/images/Book6.jpg" alt="Book 6">
+                    <p>Book 6</p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="showTableView" id="tableView">
+            <h2>All Books</h2>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Publish Year</th>
+                        <th>Author</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="book-link" href="#">Book 1</a></td>
+                        <td class="book-year">2020</td> 
+                        <td>Author 1</td>
+                        <td><button>Add to Saved Books</button></td>
+                    </tr>
+                    <tr>
+                        <td><a class="book-link" href="#">Book 2</a></td>
+                        <td class="book-year">2018</td> 
+                        <td>Author 2</td>
+                        <td><button>Add to Saved Books</button></td>
+                    </tr>
+                    <tr>
+                        <td><a class="book-link" href="#">Book 3</a></td>
+                        <td class="book-year">2019</td> 
+                        <td>Author 3</td>
+                        <td><button>Add to Saved Books</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="backButton" (click)="toggleViews()">Back to Tiles</button>
+        </div>
+
+
+        <div id="dpOverlay" class="overlay">
+            <div class="profile-picture-container">
+                <img class="profile-picture" src="./assets/images/dp.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+</div>
+
+

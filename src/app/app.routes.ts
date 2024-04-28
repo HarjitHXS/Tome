@@ -6,6 +6,8 @@ import {PrivacyStatementComponent} from "./components/pages/privacy-statement/pr
 import {TeamComponent} from "./components/pages/team/team.component";
 import {ContactComponent} from "./components/pages/contact/contact.component";
 import {LoginComponent} from "./components/pages/home/login/login.component";
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { ReceiptsComponent } from './components/pages/receipts/receipts.component';
 
 
 function ProfileComponent() {
@@ -17,7 +19,10 @@ export const routes: Routes = [{
     component: HomeComponent},
     {path: 'about',
     component: AboutComponent},
-
+    {path: 'main-page',
+    component: DashboardComponent},
+    {path: 'receipts',
+    component: ReceiptsComponent},
     {path: 'terms',
     component: TermsOfUseComponent},
     {path: 'team',

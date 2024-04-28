@@ -13,6 +13,9 @@ import {SearchComponent} from "./components/pages/home/search/search.component";
 import {CommonModule} from "@angular/common";
 import {LoginComponent} from "./components/pages/home/login/login.component";
 import { MatTabsModule } from '@angular/material/tabs';
+import { SidebarComponent } from './components/pages/sidebar/sidebar.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { ReceiptsComponent } from './components/pages/receipts/receipts.component';
 
 @Component({
   selector: 'app-root',
@@ -33,7 +36,10 @@ import { MatTabsModule } from '@angular/material/tabs';
       LoginComponent,
     RouterOutlet,
     FooterComponent,
-    MatTabsModule
+    MatTabsModule,
+    SidebarComponent,
+    DashboardComponent,
+    ReceiptsComponent
 
   ]
 })

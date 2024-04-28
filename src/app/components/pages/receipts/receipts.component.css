@@ -1,0 +1,38 @@
+.container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width:fit-content;
+    margin-bottom: 20px;
+}
+
+.receipts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+th {
+    background-color: #f2f2f2;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
