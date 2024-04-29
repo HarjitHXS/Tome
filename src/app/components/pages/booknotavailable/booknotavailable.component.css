@@ -1,0 +1,31 @@
+.container{
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+}
+
+main{
+    flex:1;
+    display: flex;
+}
+
+.book-section {
+    padding: 1rem;
+  }
+  
+  .book-tile {
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    background-color: #eef;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+.book-image {
+    max-width: 15%;
+    margin-right: 1rem;
+}
+
+

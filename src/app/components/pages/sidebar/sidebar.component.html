@@ -1,0 +1,17 @@
+<div class="sidenav">
+    <div class="dp-container">
+        <img class="dp" src="./assets/images/dp.jpg" alt="Profile Picture" id="profile-picture" (click)="toggleOverlay(true)">
+        <span class="username">Naruto</span>
+    </div>
+    <a href="/main-page">Dashboard</a>
+    <a href="/receipts">Receipts</a>
+    <a href="#">Saved Books</a>
+    <a href="#">Community</a>
+    <a href="#">Announcements</a>
+</div>
+
+<div id="overlay" class="overlay" [style.display]="overlayVisible ? 'flex' : 'none'" (click)="toggleOverlay(false)">
+    <div class="profile-picture-container">
+        <img class="profile-picture" src="./assets/images/dp.jpg" alt="Profile Picture">
+    </div>
+</div>

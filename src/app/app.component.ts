@@ -13,7 +13,13 @@ import {SearchComponent} from "./components/pages/home/search/search.component";
 import {CommonModule} from "@angular/common";
 import {LoginComponent} from "./components/pages/home/login/login.component";
 import { MatTabsModule } from '@angular/material/tabs';
-
+import { SidebarComponent } from './components/pages/sidebar/sidebar.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { ReceiptsComponent } from './components/pages/receipts/receipts.component';
+import { BookNotAvailableComponent } from './components/pages/booknotavailable/booknotavailable.component';
+import { CheckBookAvailableComponent } from './components/pages/checkbookavailability/checkbookavailability.component';
+import { BookListComponent } from './components/pages/booklist/booklist.component';
+import { BookReceiptComponent } from './components/pages/bookreceipt/bookreceipt.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -33,8 +39,14 @@ import { MatTabsModule } from '@angular/material/tabs';
       LoginComponent,
     RouterOutlet,
     FooterComponent,
-    MatTabsModule
-
+    MatTabsModule,
+    SidebarComponent,
+    DashboardComponent,
+    ReceiptsComponent,
+    BookNotAvailableComponent,
+    CheckBookAvailableComponent,
+    BookListComponent,
+    BookReceiptComponent,
   ]
 })
 

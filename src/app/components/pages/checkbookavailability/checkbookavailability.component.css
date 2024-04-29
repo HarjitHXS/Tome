@@ -1,0 +1,91 @@
+.container{
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+}
+
+main{
+    flex:1;
+    display: flex;
+}
+
+.book-container {
+    margin-top: 200px;
+    display: flex; /* Establishes a flex container */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children along the main axis */
+    align-items: center; /* Centers children along the cross axis */
+    min-height: 80vh; /* Minimum height of 100% of the viewport height */
+    text-align: center; /* Ensures text is centered within the container */
+    
+    /* Add padding, margin, and other styling as needed */
+    padding: 1rem;
+    margin: auto;
+    
+    /* Optional: Adds a box-shadow for a card-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; /* Rounded corners for the container */
+    max-width: 600px; /* Maximum width of the container */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  }
+
+.book-title {
+
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stacks flex items vertically */
+    align-items: center; /* Aligns items horizontally to the center */
+    justify-content: center; /* Aligns items vertically to the center */
+    margin: auto; /* Centers the .book-title div itself */
+    max-width: 600px; /* Maximum width of the .book-title div */
+    padding: 2rem; /* Spacing inside the .book-title div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    background: #fff; /* Background color for the .book-title div */
+  }
+  
+  .book-cover {
+    width: 100%; /* Makes the image responsive to the container size */
+    max-width: 150px; /* Maximum width of the book cover image */
+    margin-bottom: 1rem; /* Space between the image and the book info */
+  }
+  
+  .book-info {
+    text-align: center; /* Centers the text inside the .book-info div */
+  }
+  
+  .date-selection {
+    display: flex;
+    flex-direction: column; /* Stacks the labels and inputs vertically */
+    margin: 1rem 0; /* Space above and below the date selection */
+  }
+  
+  .date-selection label,
+  .date-selection input {
+    margin-bottom: 0.5rem; /* Space between each label and input */
+  }
+  
+  .check-availability {
+    background-color: #007bff; /* Color of the button */
+    color: #ffffff; /* Text color for the button */
+    border: none; /* Removes the border */
+    padding: 10px 20px; /* Padding inside the button */
+    text-transform: uppercase; /* Makes the button text uppercase */
+    font-weight: bold; /* Makes the button text bold */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes cursor to pointer on hover over the button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .check-availability:hover {
+    background-color: #0056b3; /* Darkens the button color on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .book-title {
+      width: 90%; /* Makes the .book-title div narrower on smaller screens */
+    }
+  }
+  

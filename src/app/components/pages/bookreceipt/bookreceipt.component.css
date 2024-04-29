@@ -1,0 +1,55 @@
+.container{
+    flex-direction: column;
+    display: flex;
+    min-height: 68vh;
+    background-color: white;
+}
+
+main{
+    flex:1;
+    display: flex;
+}
+
+.receipt-container {
+    margin-top: 7%;
+    margin-left: 9%;
+    width: 100%;
+    max-width: 600px; /* Increased max-width for larger receipt */
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .receipt-title {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  
+  .receipt-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem; /* Increased padding for a larger card */
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the card's content */
+  }
+  
+  .receipt-item {
+    border-bottom: 1px solid #ecf0f1;
+    padding: 15px 0; /* Increased padding for more space between items */
+    width: 100%; /* Full width within the card */
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .receipt-label {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .receipt-value {
+    font-weight: 400;
+    color: #7f8c8d;
+  }

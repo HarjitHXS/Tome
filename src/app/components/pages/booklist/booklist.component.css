@@ -1,0 +1,85 @@
+.container{
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-color: white;
+}
+
+main{
+    flex:1;
+    display: flex;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ecf0f1; /* Light gray background for content area */
+  }
+  
+  .header {
+    /* Style your header here */
+    margin-bottom: 20px;
+    /* other styles */
+  }
+  .book-list {
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Spacing between items */
+  }
+  
+  /* Individual book items */
+  .book-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    width: calc(50% - 20px); /* Adjust width for two items per row, accounting for gap */
+  }
+  
+  /* Adjust book cover size if necessary */
+  .book-cover {
+    width: 100px; /* Adjust as necessary */
+    height: 150px; /* Adjust as necessary */
+    object-fit: cover; /* Ensures the cover fits the size */
+    margin-right: 20px;
+  }
+  
+  /* Adjust hover effect for book items */
+  .book-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .book-cover {
+    width: 100px; /* Adjust to your preference */
+    margin-right: 20px;
+  }
+  
+  .book-info {
+    text-align: left;
+  }
+  
+  .book-title {
+    font-size: 1.2em;
+    color: #34495e;
+    margin: 0;
+  }
+  
+  .book-author,
+  .book-publication {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin: 0;
+  }
+
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .book-item {
+      width: 80%; /* Increase width for smaller screens */
+    }
+  }
