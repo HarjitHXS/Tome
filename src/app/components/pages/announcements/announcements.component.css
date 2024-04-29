@@ -1,0 +1,186 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.community-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to viewport height */
+  background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between; /* Items on opposite ends */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.announcements-list p{ 
+ 
+  font-size: large;
+  display: flex;
+  align-items: center; /* Aligns vertically center */
+  
+  justify-content: center;
+}
+
+.announcements-list a{ 
+  color: blue;
+}
+
+.announcement-image { 
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.content h1{ 
+margin-top: 50px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+header input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;  /* Move button to left automatically */
+}
+
+/* Main Content Styles */
+main {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+}
+
+
+.sidebar {
+  width: 20%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.user span {
+  font-weight: bold;
+}
+
+.badge {
+  background-color: #f00;
+  color: #fff;
+  padding: 3px 7px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu li.active {
+  background-color: #f0f0f0;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+  
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-top: 100px 10px 10px 100px;
+  
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  justify-content: space-between;
+}
+
+.sections > div {
+  width: calc(50% - 1rem); /* Set width for each section */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.sections > div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+  padding: 1rem 2rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+footer nav {
+  margin-bottom: 1rem;
+}
+
+footer nav a {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.legal {
+  font-size: 0.8rem;
+}
+
+.legal a {
+  margin-right:auto ; 
+} 

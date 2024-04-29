@@ -1,0 +1,12 @@
+
+
+
+
+<div class="events-container">
+    <h2>Top 5 Library Events This Week</h2>
+    <div class="event" *ngFor="let event of events">
+      <h3>{{ event.name }}</h3>
+      <p><strong>Date:</strong> {{ event.date }} <strong>Time:</strong> {{ event.time }}</p>
+      <p>{{ event.description }}</p>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.events-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .events-container h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .event {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .event:last-child {
+    border-bottom: none;
+  }
+  
+  .event h3 {
+    color: #555;
+  }
+  
+  .event p {
+    color: #666;
+    font-size: 14px;
+  }
+  

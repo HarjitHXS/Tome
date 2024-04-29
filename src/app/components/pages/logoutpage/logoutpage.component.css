@@ -1,0 +1,27 @@
+/* sign-out.component.css */
+.sign-out-message {
+
+    margin: 13em 13em 13em 13em ;
+    text-align: center;
+
+
+    /* Additional styles */
+  }
+  .sign-in-button {
+
+    margin: 10px 10px 10px 10px;
+
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #6200EE; /* Example purple color; you can change this */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    /* Button styles */
+  }
+  
+
+
