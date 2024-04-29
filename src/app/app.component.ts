@@ -13,6 +13,9 @@ import {SearchComponent} from "./components/pages/home/search/search.component";
 import {CommonModule} from "@angular/common";
 import {LoginComponent} from "./components/pages/home/login/login.component";
 import { MatTabsModule } from '@angular/material/tabs';
+import {MainPageComponent} from "./components/pages/main-page/main-page.component";
+import {DashboardComponent} from "./components/pages/main-page/dashboard/dashboard.component";
+import {CheckoutComponent} from "./components/pages/main-page/checkout/checkout.component";
 
 
 @Component({
@@ -32,6 +35,9 @@ import { MatTabsModule } from '@angular/material/tabs';
       SearchComponent,
       PrivacyStatementComponent,
       LoginComponent,
+      MainPageComponent,
+      DashboardComponent,
+      CheckoutComponent,
 
     RouterOutlet,
     FooterComponent,

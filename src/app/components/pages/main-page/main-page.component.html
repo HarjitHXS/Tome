@@ -1,0 +1,49 @@
+<div class="around">
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav #sidenav mode="side" opened="true">
+            <div class="user-info">
+                <mat-icon>account_circle</mat-icon>
+                <h2>Harry</h2>
+                <mat-divider></mat-divider>
+            </div>
+            <mat-divider class="div"></mat-divider>
+            <mat-nav-list class="list">
+
+                <button mat-button (click)=" showReceipts = false; showCheckout = false">
+                    <mat-icon>dashboard</mat-icon>
+                    Dashboard
+                </button>
+                <button mat-button (click)="showReceipts = true; showDashboard = false; showCheckout= false">
+                    <mat-icon>receipt</mat-icon>
+                    Receipts
+                </button>
+                <button mat-button (click)="showCheckout = true; showDashboard = false; showReceipts = false">
+                    <mat-icon>shopping_cart</mat-icon>
+                    checkout
+                </button>
+                <button mat-button routerLink="/settings">
+                    <mat-icon>settings</mat-icon>
+                    Settings
+                </button>
+                <button mat-button routerLink="/logout">
+                    <mat-icon>help</mat-icon>
+                    help
+                </button>
+
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+
+            <div class="dashboard" *ngIf="showDashboard">
+                <app-dashboard></app-dashboard>
+            </div>
+<!--            <div class="receipts" *ngIf="showReceipts">-->
+<!--                <app-receipts></app-receipts>-->
+<!--            </div>-->
+            <div class="checkout" *ngIf="showCheckout">
+                <app-checkout></app-checkout>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
