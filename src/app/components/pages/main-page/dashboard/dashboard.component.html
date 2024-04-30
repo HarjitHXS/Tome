@@ -1,39 +1,69 @@
 <div class="dashboard">
     <div class="book-list">
         <div class="fav">
-            <h2>Favorite Books</h2>
+            <h1>Favorite Books</h1>
 
             <!-- This is just placeholder data. You'll replace this with dynamic data later. -->
             <div class="book">
                 <div class="book-image"></div>
-                <h2>Dragon of the Red Dawn</h2>
-                <p>Author: Mary Pope Osborne</p>
-                <p>Year: 2009</p>
-                <button>Add to Cart</button> <!-- Add to Cart button -->
-            </div>
-            <div class="book">
-                <div class="book-image"></div>
-                <h2>Dragon of the Red Dawn</h2>
-                <p>Author: Mary Pope Osborne</p>
-                <p>Year: 2009</p>
-                <button>Add to Cart</button> <!-- Add to Cart button -->
+                <div class="book-details">
+                    <h2>Dragon of the Red Dawn</h2>
+                    <p>Author: Mary Pope Osborne</p>
+                    <p>Year: 2009</p>
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                                <mat-icon>add</mat-icon>
+                            </button>
+
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </div>
             </div>
             <div class="book">
                 <div class="book-image2"></div>
-                <h2>Great Books</h2>
-                <p>Author: David Denby</p>
-                <p>Year: 2013</p>
-                <button>Add to Cart</button> <!-- Add to Cart button -->
+                <div class="book-details">
+                    <h2>Great Books</h2>
+                    <p>Author: David Denby</p>
+                    <p>Year: 2013</p>
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>add</mat-icon>
+                    </button>
+
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </div>
             </div>
             <div class="book">
                 <div class="book-image"></div>
-                <h2>Dragon of the Red Dawn</h2>
-                <p>Author: Mary Pope Osborne</p>
-                <p>Year: 2009</p>
-                <button>Add to Cart</button> <!-- Add to Cart button -->
-            </div>
+                <div class="book-details">
+                    <h2>Dragon of the Red Dawn</h2>
+                    <p>Author: Mary Pope Osborne</p>
+                    <p>Year: 2009</p>
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>add</mat-icon>
+                    </button>
 
-            <button>View More</button> <!-- View More button -->
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="book">
+                <div class="book-image"></div>
+                <div class="book-details">
+                    <h2>Dragon of the Red Dawn</h2>
+                    <p>Author: Mary Pope Osborne</p>
+                    <p>Year: 2009</p>
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>add</mat-icon>
+                    </button>
+
+                    <button class="button-padding" mat-mini-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -52,7 +82,7 @@
                 <label for="year">Year</label>
                 <input id="year" placeholder="Enter year">
             </div>
-            <button type="submit" class="search-button">Search</button>
+            <button type="submit" class="search">Search</button>
         </form>
     </div>
 </div>

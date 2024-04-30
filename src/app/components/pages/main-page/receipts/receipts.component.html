@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<header>
+    <h1 class="text-center">Receipts </h1>
+</header>
+<body>
+<div class="all">
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>All Receipts</p>
+        @if (showFiller) {
+            <p>You have no receipts</p>
+        }
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Show All Receipts
+        </button>
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="invoice-title">
+                                <h4 class="float-end font-size-15">Receipt #DS0204 <span class="badge bg-success font-size-12 ms-2">Returned</span></h4>
+                                <div class="mb-4">
+
+                                </div>
+
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="text-muted">
+                                        <h5 class="font-size-16 mb-3">Borrowed By:</h5>
+                                        <h5 class="font-size-15 mb-2">Preston Miller</h5>
+
+                                        <p>Borrowed Date: 12 Oct, 2020</p>
+                                        <p>Return Date: 20 Oct, 2020</p>
+                                        <p>Location: Home</p>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                                <div class="col-sm-6">
+                                    <div class="text-muted text-sm-end">
+                                        <div>
+                                            <h5 class="font-size-15 mb-1">Book Title:</h5>
+                                            <p>Black Strap A012</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <h5 class="font-size-15 mb-1">ISBN:</h5>
+                                            <p>978-0-123-45678-9</p>
+                                        </div>
+                                        <div class="mt-4">
+                                            <h5 class="font-size-15 mb-1">Author:</h5>
+                                            <p>John Doe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end col -->
+                            </div>
+                            <!-- end row -->
+
+                            <div class="py-2">
+                                <h5 class="font-size-15">Additional Details</h5>
+
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-nowrap table-centered mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 70px;">No.</th>
+                                            <th>Description</th>
+                                        </tr>
+                                        </thead><!-- end thead -->
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>This book was returned in good condition.</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>No late fees applied.</td>
+                                        </tr>
+                                        <!-- end tr -->
+                                        </tbody><!-- end tbody -->
+                                    </table><!-- end table -->
+                                </div><!-- end table responsive -->
+                                <div class="d-print-none mt-4">
+                                    <div class="float-end">
+                                        <a href="#" class="btn btn-primary w-md">Send</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div>
+        </div>
+        <button class="button" type="button" mat-button (click)="drawer.toggle()">
+            Show more Receipts
+        </button>
+    </div>
+
+</mat-drawer-container>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

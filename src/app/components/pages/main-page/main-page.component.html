@@ -2,30 +2,39 @@
     <mat-sidenav-container class="example-container">
         <mat-sidenav #sidenav mode="side" opened="true">
             <div class="user-info">
-                <mat-icon>account_circle</mat-icon>
+                <button mat-icon-button (click)=" showSettings = true; showDashboard = false; showReceipts = false; showCheckout = false; showHelp = false;showSavedBooks = false; showannouncements = false">
+                    <mat-icon>account_circle</mat-icon>
+                </button>
                 <h2>Harry</h2>
                 <mat-divider></mat-divider>
             </div>
             <mat-divider class="div"></mat-divider>
             <mat-nav-list class="list">
 
-                <button mat-button (click)=" showReceipts = false; showCheckout = false">
+                <button mat-button (click)=" showDashboard = true; showReceipts = false; showCheckout = false; showHelp = false;showSavedBooks = false; showannouncements = false; showSettings = false">
                     <mat-icon>dashboard</mat-icon>
                     Dashboard
                 </button>
-                <button mat-button (click)="showReceipts = true; showDashboard = false; showCheckout= false">
+                <button mat-button (click)="showReceipts = true; showDashboard = false; showCheckout= false; showHelp = false;showSavedBooks = false; showannouncements = false; showSettings = false">
                     <mat-icon>receipt</mat-icon>
                     Receipts
                 </button>
-                <button mat-button (click)="showCheckout = true; showDashboard = false; showReceipts = false">
+                <button mat-button (click)="showCheckout = true; showDashboard = false; showReceipts = false; showHelp = false;showSavedBooks = false; showannouncements = false; showSettings = false">
                     <mat-icon>shopping_cart</mat-icon>
                     checkout
                 </button>
-                <button mat-button routerLink="/settings">
-                    <mat-icon>settings</mat-icon>
-                    Settings
-                </button>
-                <button mat-button routerLink="/logout">
+                <button mat-button (click)=" showSavedBooks = true; showannouncements = false; showCheckout = false; showDashboard = false; showReceipts = false; showHelp = false ; showSettings = false">
+                        <mat-icon>favorite</mat-icon>
+                        SavedBooks
+                    </button>
+                    <button mat-button (click)="showannouncements = true; showCheckout = false; showDashboard = false; showReceipts = false; showHelp = false;showSavedBooks = false; showSettings = false">
+                        <mat-icon>announcement</mat-icon>
+                        Announcements
+                    </button>
+
+                <mat-divider></mat-divider>
+
+                <button mat-button (click)="showHelp = true; showDashboard = false; showCheckout = false; showReceipts = false; showannouncements = false;showSavedBooks = false; showSettings = false">
                     <mat-icon>help</mat-icon>
                     help
                 </button>
@@ -38,11 +47,23 @@
             <div class="dashboard" *ngIf="showDashboard">
                 <app-dashboard></app-dashboard>
             </div>
-<!--            <div class="receipts" *ngIf="showReceipts">-->
-<!--                <app-receipts></app-receipts>-->
-<!--            </div>-->
+            <div class="receipts" *ngIf="showReceipts">
+                <app-receipts></app-receipts>
+            </div>
             <div class="checkout" *ngIf="showCheckout">
                 <app-checkout></app-checkout>
+            </div>
+            <div class="announcements" *ngIf="showannouncements">
+                <app-announcements></app-announcements>
+            </div>
+            <div class="settings" *ngIf="showSettings">
+                <app-setting></app-setting>
+            </div>
+            <div class="saved-books" *ngIf="showSavedBooks">
+                <app-saved-books></app-saved-books>
+            </div>
+            <div class="help" *ngIf="showHelp">
+                <app-help-page></app-help-page>
             </div>
         </mat-sidenav-content>
     </mat-sidenav-container>

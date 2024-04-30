@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Saved Books</h2>
+    <div *ngIf="savedBooks.length === 0" class="no-saved-books">
+        <p>You haven't saved any books yet.</p>
+       <button routerLink="/main-page">Browse Books</button>
+    </div>
+    <div *ngIf="savedBooks.length > 0" class="saved-books-list">
+        <!-- Render saved books here -->
+        <div *ngFor="let book of savedBooks" class="book">
+            <!-- Display book details here -->
+            <h3>{{ book.title }}</h3>
+            <p>Author: {{ book.author }}</p>
+            <p>Year: {{ book.year }}</p>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {NgForOf} from "@angular/common";
 import {SearchComponent} from "./search/search.component";
+import {RouterLink} from "@angular/router";
 
 
 @Component({
@@ -10,7 +11,8 @@ import {SearchComponent} from "./search/search.component";
     standalone: true,
     imports: [
         NgForOf,
-        SearchComponent
+        SearchComponent,
+        RouterLink
     ],
     styleUrls: ['./home.component.css']
 })

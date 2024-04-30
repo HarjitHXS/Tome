@@ -2,26 +2,50 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row; /* Change this from column to row */
-    padding: 20px;
+
+    margin-bottom: 10px;
 }
 
 
 
 .book-list {
-    width: 500px;
-    height: 500px;
     display: flex;
-    align-content: center;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: center;
+    margin-right: 120px;
 }
 
-.fav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+.fav {
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.book {
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.book {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    padding: 20px;
+}
+
+.book h2 {
+    margin-top: 0;
+}
+
+.book p {
+    margin-bottom: 5px;
+}
+
+
+
+
 
 .book-image {
 
@@ -42,18 +66,20 @@
 
 
 .search-form {
-    width: 300px;
+    width: 350px;
     height: 100%;
     border: 1px solid #000; /* Add a border */
+    border-radius: 10px;
+    margin-top: 20px;
     margin-left: 20px; /* Add left margin */
+    background: linear-gradient(217deg, rgba(207, 207, 207, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(255, 0, 0, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(107, 168, 225), rgba(0,0,255,0) 70.71%);
 }
 
-.book {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+.search-form h2 {
+    text-align: center;
 }
-
 .example-full-width {
 
     padding: 10px; /* Add some padding */
@@ -69,48 +95,27 @@
     width: 250px; /* Make the input take up the full width */
     padding: 20px; /* Add some padding */
     border: 1px solid #ddd; /* Add a border */
+    border-radius: 10px;
+}
+.button-padding {
+    margin-right: 10px; /* Adjust as needed */
 }
 
-.search-button {
+.search {
+    display: flex;
+    justify-content: flex-end;
     background-color: #008CBA; /* Blue background */
     border: none; /* Remove border */
     color: white; /* White text */
     padding: 15px 32px; /* Padding */
     text-align: center; /* Centered text */
     text-decoration: none; /* Remove underline */
-    display: inline-block;
+
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 100px;
     cursor: pointer; /* Pointer/hand icon */
     border-radius: 4px; /* Rounded corners */
 }
 
-/* Style for the View More button */
-.book-list button {
-    background-color: #008CBA; /* Blue background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 15px 32px; /* Padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 4px; /* Rounded corners */
-}
 
-/* Style for the Add to Cart button */
-.book button {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* Remove border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Padding */
-    text-align: center; /* Centered text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer; /* Pointer/hand icon */
-    border-radius: 4px; /* Rounded corners */
-}
+

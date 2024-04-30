@@ -7,6 +7,7 @@ import {MatFormField, MatHint, MatLabel, MatSuffix} from "@angular/material/form
 import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
 import {MatInput} from "@angular/material/input";
 import {MatIcon} from "@angular/material/icon";
+import {CartService} from "../../../../service/cart-service.service";
 
 @Component({
   selector: 'app-checkout',
@@ -35,12 +36,14 @@ import {MatIcon} from "@angular/material/icon";
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  cartItems: any[] = [];
   availabilityChecked: boolean = false;
   isLinear = true;
   firstFormGroup: FormGroup = new FormGroup({});
   secondFormGroup: FormGroup = new FormGroup({});
+    thirdFormGroup: FormGroup = new FormGroup({});
 
-  constructor(private _formBuilder: FormBuilder, ) {}
+  constructor(private _formBuilder: FormBuilder, private cartService: CartService) {}
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -51,6 +54,7 @@ export class CheckoutComponent implements OnInit {
       startDate: ['', [Validators.required, Validators.pattern('\\d{4}-\\d{2}-\\d{2}')]],
       endDate: ['', [Validators.required, Validators.pattern('\\d{4}-\\d{2}-\\d{2}')]]
     });
+    this.thirdFormGroup = this._formBuilder.group({});
   }
   checkAvailability() {
     // Logic to check availability based on start and end dates

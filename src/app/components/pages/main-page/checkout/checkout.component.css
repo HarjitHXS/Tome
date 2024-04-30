@@ -3,6 +3,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 80%;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 .around {
     display: flex;
@@ -22,13 +31,45 @@
     border-radius: 40%;
 
 }
-.books {
-    width: 50%; /* Adjust as needed */
-    margin: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* styles.css */
+
+.reading-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.booker{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button {
+    margin-right: 10px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    text-align: center;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
 }
 
 .book-image2 {
@@ -72,6 +113,67 @@
     margin: 10px 0;
 }
 
+/* styles.css */
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-button,
+.availability-button,
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous-button:hover,
+.availability-button:hover,
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.availability-button {
+    background-color: #28a745; /* Green color for availability button */
+}
+
+.availability-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+}
+
 button {
     margin: 10px 0;
+}
+/* styles.css */
+
+.cont {
+    margin-top: 100px;
+    font-size: 18px; /* Increase font size */
+}
+
+
+.availability-info {
+    margin-top: 100px;
+    font-size: 18px; /* Increase font size */
+}
+
+.availability-info p {
+    margin-bottom: 10px;
+}
+
+.availability-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.availability-info li {
+    margin-bottom: 5px;
 }

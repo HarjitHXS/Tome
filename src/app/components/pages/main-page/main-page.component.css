@@ -35,13 +35,8 @@ mat-sidenav-content {
 }
 button {
     margin-top: 20px; /* Space above the button */
-    background-color: #007bff; /* Background color of the button */
-    color: #fff; /* Text color of the button */
-    border: none; /* Remove the default button border */
-    padding: 10px 20px; /* Padding inside the button */
-    text-align: center; /* Center the button text */
-    text-decoration: none; /* Remove the default button text decoration */
-    display: inline-block; /* Make the button an inline-block element */
+    background-color: #369f3e; /* Background color of the button */
+    color: #0b0707; /* Text color of the button */
     font-size: 16px; /* Button text size */
     transition-duration: 0.4s; /* Transition duration for the button hover effect */
     cursor: pointer; /* Change the cursor when hovering over the button */
