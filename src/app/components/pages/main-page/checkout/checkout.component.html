@@ -1,0 +1,85 @@
+<body>
+<header>
+    <h1>Checkout</h1>
+</header>
+
+
+<div class="row">
+
+    <mat-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Reading Option</ng-template>
+                <div class="reading-option">
+                    <div class="book">
+                        <div class="book-image2"></div>
+                        <div class="booker">
+                            <h2>Dragon of the Red Dawn</h2>
+                            <p>Author: Mary Pope Osborne</p>
+                            <p>Year: 2009</p>
+                        </div>
+                    </div>
+                    <mat-radio-group aria-label="Select an option" formControlName="readingOption">
+                        <mat-radio-button class="radio-button" value="here">For here</mat-radio-button>
+                        <mat-radio-button class="radio-button" value="toGo">To go</mat-radio-button>
+                    </mat-radio-group>
+                    <div class="button-group">
+                        <button mat-button class="next-button" matStepperNext>
+                            Next
+                            <mat-icon>navigate_next</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Select Dates</ng-template>
+
+                <div class="form-field">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="startDate" placeholder="Start Date (YYYY-MM-DD)">
+                    </mat-form-field>
+                </div>
+
+                <div class="form-field">
+                    <mat-form-field>
+                        <input matInput type="text" formControlName="endDate" placeholder="End Date (YYYY-MM-DD)">
+                    </mat-form-field>
+                </div>
+
+                <div class="button-group">
+                    <button mat-button class="previous-button" matStepperPrevious>Back</button>
+                    <button mat-button class="availability-button" (click)="checkAvailability()">Check Availability</button>
+                    <button mat-button class="next-button" matStepperNext [disabled]="!availabilityChecked">Next</button>
+                </div>
+            </form>
+        </mat-step>
+
+        <mat-step [stepControl]="thirdFormGroup">
+            <form [formGroup]="thirdFormGroup">
+                <ng-template matStepLabel>Book Availability</ng-template>
+                <div class="availability-info">
+                    <p>Books available at 2nd floor, aisle 3, shelves 5:</p>
+                    <ul>
+                        <li>The Night of the Ninjas</li>
+                        <!-- Add more books if needed -->
+                    </ul>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Confirm</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <h1>Done!</h1>
+    <p>Your booking has been confirmed.</p>
+</mat-step>
+
+
+    </mat-stepper>
+</div>
+</body>

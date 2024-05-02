@@ -13,6 +13,16 @@ import {SearchComponent} from "./components/pages/home/search/search.component";
 import {CommonModule} from "@angular/common";
 import {LoginComponent} from "./components/pages/home/login/login.component";
 import { MatTabsModule } from '@angular/material/tabs';
+import {MainPageComponent} from "./components/pages/main-page/main-page.component";
+import {DashboardComponent} from "./components/pages/main-page/dashboard/dashboard.component";
+import {CheckoutComponent} from "./components/pages/main-page/checkout/checkout.component";
+import {ReceiptsComponent} from "./components/pages/main-page/receipts/receipts.component";
+import {HelpPageComponent} from "./components/pages/main-page/help-page/help-page.component";
+import {AnnouncementsComponent} from "./components/pages/main-page/annoucements/announcements.component";
+import {SavedBooksComponent} from "./components/pages/main-page/saved-books/saved-books.component";
+import {SettingComponent} from "./components/pages/main-page/setting/setting.component";
+import {LogoutComponent} from "./components/pages/home/logout/logout.component";
+
 
 @Component({
   selector: 'app-root',
@@ -31,6 +41,16 @@ import { MatTabsModule } from '@angular/material/tabs';
       SearchComponent,
       PrivacyStatementComponent,
       LoginComponent,
+      MainPageComponent,
+      DashboardComponent,
+      CheckoutComponent,
+      ReceiptsComponent,
+      HelpPageComponent,
+      AnnouncementsComponent,
+      SavedBooksComponent,
+      SettingComponent,
+      LogoutComponent,
+
     RouterOutlet,
     FooterComponent,
     MatTabsModule

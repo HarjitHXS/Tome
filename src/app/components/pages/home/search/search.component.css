@@ -29,7 +29,13 @@
     border-radius: 10px; /* Add this line */
 }
 
-
+input[type="text"] {
+    width: 300px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust as needed */
+    border-radius: 10px; /* Add this line */
+    color: #000; /* Change this to the color you want for the text */
+}
 
 .tabs {
 

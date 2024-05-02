@@ -1,4 +1,6 @@
 .about-container {
+    min-height: 70vh;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,4 +9,8 @@
     padding: 50px;
     box-sizing: border-box;
     text-align: center;
+}
+h1 {
+    margin-bottom: 30px;
+    font-size: 3em; /* Adjust as needed */
 }

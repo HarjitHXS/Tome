@@ -1,6 +1,9 @@
 #fcf-form {
     display:block;
 }
+h1 {
+    font-size: 3em; /* Adjust as needed */
+}
 
 .fcf-body {
     margin: 0;

@@ -1,5 +1,11 @@
-
-
+.container-one{
+    min-height: 70vh;
+}
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 3em; /* Adjust as needed */
+}
 .column {
     float: left;
     width: 33.3%;

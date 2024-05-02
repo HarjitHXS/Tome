@@ -1,0 +1,179 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.around {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.list1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.button1{
+    width: 100px;
+    background: #0069d9;
+    border-radius: 40%;
+
+}
+/* styles.css */
+
+.reading-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.booker{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-button {
+    margin-right: 10px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.book-image2 {
+
+    background-image: url("https://books.google.com/books/content?id=4kZbs2NeLJoC&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2naoW4GgSZN3q1eBge3XkeWxt1jg&w=1280");
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 200px;
+}
+
+.example-container {
+    width: 80%;
+    height: 80%;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.mat-divider {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.list {
+    width: 100%;
+    padding: 20px;
+}
+
+.dashboard, .receipts, .checkout {
+    padding: 20px;
+}
+
+.mat-form-field {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* styles.css */
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous-button,
+.availability-button,
+.next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.previous-button:hover,
+.availability-button:hover,
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.availability-button {
+    background-color: #28a745; /* Green color for availability button */
+}
+
+.availability-button:hover {
+    background-color: #218838; /* Darker green color on hover */
+}
+
+button {
+    margin: 10px 0;
+}
+/* styles.css */
+
+.cont {
+    margin-top: 100px;
+    font-size: 18px; /* Increase font size */
+}
+
+
+.availability-info {
+    margin-top: 100px;
+    font-size: 18px; /* Increase font size */
+}
+
+.availability-info p {
+    margin-bottom: 10px;
+}
+
+.availability-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.availability-info li {
+    margin-bottom: 5px;
+}
