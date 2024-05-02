@@ -14,9 +14,9 @@
                     <div class="book">
                         <div class="book-image2"></div>
                         <div class="booker">
-                        <h2>The Night of the Ninjas</h2>
-                        <p>Author: Mary Pope Osborne</p>
-                        <p>Year: 2010</p>
+                            <h2>Dragon of the Red Dawn</h2>
+                            <p>Author: Mary Pope Osborne</p>
+                            <p>Year: 2009</p>
                         </div>
                     </div>
                     <mat-radio-group aria-label="Select an option" formControlName="readingOption">
@@ -73,6 +73,11 @@
                 </div>
             </form>
         </mat-step>
+        <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    <h1>Done!</h1>
+    <p>Your booking has been confirmed.</p>
+</mat-step>
 
 
     </mat-stepper>

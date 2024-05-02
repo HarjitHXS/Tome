@@ -1,5 +1,5 @@
 
-<body>
+<!-- announcements.component.html -->
 <header>
     <h1>Announcements</h1>
 </header>
@@ -8,8 +8,7 @@
         <h2>Latest Announcement</h2>
         <div class="announcement">
             <h3>Reading Workshop on Friday</h3>
-            <p>Join us for a reading workshop on Friday, next month. Register now!</p>
-            <a href="#" class="btn">Register Now</a>
+            <p>Join us for a reading workshop on Friday, next month. <a href="javascript:void(0)" class="btn" (click)="openRegistrationDialog()">Register Now</a></p>
         </div>
     </section>
     <section>
@@ -20,5 +19,3 @@
         </div>
     </section>
 </div>
-</body>
-

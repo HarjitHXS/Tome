@@ -45,9 +45,10 @@
 }
 
 .footer a:hover {
-    color: #057ff1;
+    color: #cccccc;
     text-decoration: none;
 }
 .footer p {
+    margin-top: 5px;
     color: #f8d5d5;
 }

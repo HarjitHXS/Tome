@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {MatButton} from "@angular/material/button";
 import {MatStep, MatStepLabel, MatStepper, MatStepperNext, MatStepperPrevious} from "@angular/material/stepper";
@@ -8,6 +8,7 @@ import {MatDatepicker, MatDatepickerInput, MatDatepickerToggle} from "@angular/m
 import {MatInput} from "@angular/material/input";
 import {MatIcon} from "@angular/material/icon";
 import {CartService} from "../../../../service/cart-service.service";
+import {MatDialog, MatDialogRef} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-checkout',
@@ -36,6 +37,7 @@ import {CartService} from "../../../../service/cart-service.service";
   styleUrls: ['./checkout.component.css']
 })
 export class CheckoutComponent implements OnInit {
+  @ViewChild(MatDialog) dialog: MatDialog | undefined;
   cartItems: any[] = [];
   availabilityChecked: boolean = false;
   isLinear = true;

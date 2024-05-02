@@ -3,15 +3,14 @@
     <a routerLink="/home"><div class="logo">Tome</div></a>
     <div class="search">
         <input type="text" placeholder="Search">
-       <button class="search-button">
+       <button class="search-button" routerLink="/login">
    <mat-icon>search</mat-icon>
-   Search
 </button>
         <div *ngIf="!isLoggedIn">
             <a href="/login" class="nav-link sign-in">LOG IN</a>
         </div>
         <div *ngIf="isLoggedIn" class="container">
-            <a href="/login" class="nav-link sign-up">LOG OUT</a>
+            <a href="/logout" class="nav-link sign-up">LOG OUT</a>
         </div>
     </div>
 </nav>

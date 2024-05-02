@@ -14,6 +14,7 @@ import {HelpPageComponent} from "./components/pages/main-page/help-page/help-pag
 import {AnnouncementsComponent} from "./components/pages/main-page/annoucements/announcements.component";
 import {SavedBooksComponent} from "./components/pages/main-page/saved-books/saved-books.component";
 import {SettingComponent} from "./components/pages/main-page/setting/setting.component";
+import {LogoutComponent} from "./components/pages/home/logout/logout.component";
 
 
 function ProfileComponent() {
@@ -52,6 +53,8 @@ export const routes: Routes = [{
     component: SavedBooksComponent},
     {path: 'settings',
     component: SettingComponent},
+    {path: 'logout',
+    component: LogoutComponent},
 
     {
         path: '',
